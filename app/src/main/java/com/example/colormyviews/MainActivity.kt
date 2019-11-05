@@ -27,6 +27,18 @@ class MainActivity : AppCompatActivity() {
             else -> view.setBackgroundColor(Color.LTGRAY)
         }
     }
+    /*
+    private fun setBackgroundResource(view: View){
+        when (view.id) {
+
+            R.id.box_one_text -> view.setBackgroundResource(R.drawable.image_one)
+            R.id.box_two_text -> view.setBackgroundResource(R.drawable.image_two)
+            R.id.box_three_text -> view.setBackgroundResource(R.drawable.image_three)
+            R.id.box_four_text -> view.setBackgroundResource(R.drawable.image_four)
+            R.id.box_five_text -> view.setBackgroundResource(R.drawable.image_five)
+            else -> view.setBackgroundColor(Color.LTGRAY)
+        }
+    }*/
 
     private fun setListeners() {
 
@@ -44,6 +56,7 @@ class MainActivity : AppCompatActivity() {
 
         for (item in clickableViews) {
             item.setOnClickListener { makeColored(it) }
+            //item.setOnClickListener { setBackgroundResource(it) }
         }
     }
 }
